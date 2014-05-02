@@ -1,0 +1,118 @@
+<style type="text/css">
+#head{
+background: #005690;
+height: 60px;
+width: 100%;
+position: absolute;
+z-index: 0;
+top: 0;
+left: 0;
+}
+
+#title{
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #ECF8FA;
+line-height: 66px;
+top: 0px;
+position: absolute;
+}
+
+#title a {
+text-decoration: none;
+color: #ECF8FA;
+}
+
+.lin a {
+font-family: AvenirNext-Bold;
+font-size: 30px;
+text-decoration: none;
+color: #75AFBF;
+top: 0px;
+padding-left: 5px;
+line-height: 50px;
+}
+
+
+
+/*
+#author{
+position: relative;
+left: 580px;
+}
+
+#about{
+position: relative;
+left: 700px;
+top: -50px;
+}
+
+#blog{
+position: relative;
+left: 810px;
+top: -100px;
+}
+
+#buy{
+position: relative;
+left: 900px;
+top: -150px;
+} */
+/* 
+#author{
+position: relative;
+left: 67%;
+}
+
+#about{
+position: relative;
+left: 77%;
+top: -50px;
+}
+
+#blog{
+position: relative;
+left: 86%;
+top: -100px;
+}
+
+#buy{
+position: relative;
+left: 93%;
+top: -150px;
+}
+*/
+#links {
+	height: 50px;
+	/* left: 45%; */
+	right: 2%;
+	top: -1%;
+	position: absolute;
+
+}
+
+#links ul li {
+	display: inline-block;
+	text-decoration: none;
+	padding-left: 14px;
+}
+
+</style>
+
+<div id="head">
+</div>
+<div id="title"><%= link_to "The Sugar Witch Switch", root_path %>
+</div> 
+<div id="links">
+	<ul>
+	<li><div id="author" class="lin"><%= link_to "Author", author_path %></div></li>
+	<li><div id="about" class="lin"><%= link_to "About", about_path %></div></li>
+	<li><div id="blog" class="lin"><%= link_to "Blog", blog_path %></div></li>
+	<li><div id="buy" class="lin"><%= link_to "Buy", buy_path %></div></li>
+	</ul>
+</div>
+
+
+
+
+

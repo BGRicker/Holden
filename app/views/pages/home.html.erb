@@ -1,0 +1,129 @@
+<style type="text/css">
+
+#back{ 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background:url('/assets/Background.png');
+	background-size: 100% 100%;
+	z-index: 0;
+}
+
+#title{
+	font-family: 'Montserrat', sans-serif;
+	z-index: 0;
+	position: absolute;
+	top: -3%;
+	left: 2%;
+	font-size: 24px;
+	color: #4A95BC;
+}
+
+#menu{
+	position: relative;
+	top: 8%;
+	left: -5%;
+	width: 200px;
+	padding-top: 10px;
+}
+
+#menu a {
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #D6ECF0;
+text-decoration: none;
+}
+
+.mnu {
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #ECF8FA;
+line-height: 66px;
+top: 0px;
+}
+
+/* 
+#athr{
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #ECF8FA;
+line-height: 66px;
+top: 0px;
+position: absolute;
+}
+
+#abt{
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #ECF8FA;
+line-height: 66px;
+top: 0px;
+position: absolute;
+}
+
+#blg{
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #ECF8FA;
+line-height: 66px;
+top: 0px;
+position: absolute;
+}
+
+#by{
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: #ECF8FA;
+line-height: 66px;
+top: 0px;
+position: absolute;
+}
+ */
+#copywrite{
+	bottom: -1%;
+	right: 0%;
+	max-width:100%;
+	max-height:100%;
+	position: absolute;
+	z-index: 0;
+}
+</style>
+
+
+<div id="back">
+</div>
+
+<div id="title">
+	<h1>The Sugar Witch Switch</h1>
+</div>e
+<!-- <div id="menu">
+	<a href ="/author">
+	<div id="athr" class="top"><img src="/assets/By.png"></img></div>
+	</a>
+	<a href ="/about">
+	<div id="abt" class="top"><img src="/assets/About.png"></img></div>
+	</a>
+	<a href ="/blog">
+	<div id="blg" class="top"><img src="/assets/Blog.png"></img></div>
+	</a>
+	<a href ="/buy">															image based links
+	<div id="by" class="top">Buy</div>
+	</a>
+</div>
+-->
+<div id="menu" class ="mnu">
+	<ul>
+		<ul><%= link_to "Author", author_path %></ul>
+		<ul><%= link_to "About", about_path %></ul>
+		<ul><%= link_to "Blog", blog_path %></ul>
+		<ul><%= link_to "Buy", buy_path %></ul>
+	</ul>
+</div>
+<div id="copywrite"><img src="/assets/Copy.png"></img></div>
+
+
+
+
+
