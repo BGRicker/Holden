@@ -1,3 +1,4 @@
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
 <style type="text/css">
 
 #back{ 
@@ -13,8 +14,10 @@
 
 #title{
 	font-family: 'Open Sans', sans-serif;
+	font-wight: 800;
 	z-index: 0;
 	position: absolute;
+	text-align: center;
 	top: -3%;
 	left: 2%;
 	font-size: 24px;
@@ -24,7 +27,7 @@
 #menu{
 	position: relative;
 	top: 8%;
-	left: -5%;
+	left: -3%;
 	width: 200px;
 	padding-top: 10px;
 }
@@ -62,21 +65,8 @@ top: 0px;
 <div id="title">
 	<h1>The Sugar Witch Switch</h1>
 </div>e
-<!-- <div id="menu">
-	<a href ="/author">
-	<div id="athr" class="top"><img src="/assets/By.png"></img></div>
-	</a>
-	<a href ="/about">
-	<div id="abt" class="top"><img src="/assets/About.png"></img></div>
-	</a>
-	<a href ="/blog">
-	<div id="blg" class="top"><img src="/assets/Blog.png"></img></div>
-	</a>
-	<a href ="/buy">															image based links
-	<div id="by" class="top">Buy</div>
-	</a>
-</div>
--->
+
+
 <div id="menu" class ="mnu">
 	<ul>
 		<ul><%= link_to "Author", author_path %></ul>
@@ -85,9 +75,7 @@ top: 0px;
 		<ul><%= link_to "Buy", buy_path %></ul>
 	</ul>
 </div>
-<div id="copywrite"><img src="/assets/Copy.png"></img></div>
 
-
-
-
-
+<div id="copywrite">
+	<img src="/assets/Copy.png"></img>
+</div>
