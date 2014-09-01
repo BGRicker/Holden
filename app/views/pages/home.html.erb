@@ -1,6 +1,18 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
 <style type="text/css">
 
+#inf{
+	width: 60%;
+}
+
+#pic{
+	position: absolute;
+	top: 22%;
+	left: 62%;
+	height: 350px;
+	width: 350px;
+	}
+
 #back{
 	top: 0;
 	left: 0;
@@ -12,65 +24,37 @@
 	z-index: 0;
 }
 
-#title{
-	font-family: 'Open Sans', sans-serif;
-	font-wight: 800;
-	z-index: 0;
-	position: absolute;
-	text-align: center;
-	top: -3%;
-	left: 2%;
-	font-size: 24px;
-	color: #4A95BC;
-}
-
-#menu{
-	position: relative;
-	top: 8%;
-	left: -3%;
-	width: 200px;
-	padding-top: 10px;
-}
-
-#menu a {
-font-family: 'Open Sans', sans-serif;
-font-size: 36px;
-color: #D6ECF0;
-text-decoration: none;
-}
-
-.mnu {
-font-family: 'Open Sans', sans-serif;
-font-weight: 700;
-font-size: 36px;
-color: #ECF8FA;
-line-height: 66px;
-top: 0px;
-}
-
 #copywrite{
-	bottom: -1%;
+	bottom: 0%;
 	right: 1%;
 	position: absolute;
 	z-index: 0;
 }
+
+#buy1 a{
+position: relative;
+font-family: 'Open Sans', sans-serif;
+font-weight: 800;
+font-size: 30px;
+text-decoration: none;
+color: #000000;
+padding: 0px;
+left: 45%;
+}
+
 </style>
-
-
-<div id="back">
+<div id="inf">
+This book is a great solution for parents who worry about how much candy their children are eating after Halloween.
+<br><br>
+In this Halloween tale, a boy named Holden meets a strange new friend, the Sugar Witch. Will Holden make a magical
+trade or will he keep his treats and let the Sugar Witch find another trick or treater to help her build her sugar
+castle? Maybe the next trick or treater will be you!
 </div>
 
-<div id="title">
-</div>e
-
-
-<div id="menu" class ="mnu">
-	<ul>
-		<ul><%= link_to "Author", author_path %></ul>
-		<ul><%= link_to "About", about_path %></ul>
-		<ul><%= link_to "Blog", blog_path %></ul>
-		<ul><%= link_to "Buy", buy_path %></ul>
-	</ul>
+<div id="pic">
+<img style="height:auto; width:auto; max-width:450px; max-height:500px;" src="/assets/Background.png">
+	<div id="buy1" class="lin"><%= link_to "Buy Now", buy_path %></div>
+	</div>
 </div>
 
 <div id="copywrite">
